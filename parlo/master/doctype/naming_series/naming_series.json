@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "prompt",
+ "creation": "2023-03-30 18:20:14.996707",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "help_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Series",
+   "reqd": 1
+  },
+  {
+   "fieldname": "help_html",
+   "fieldtype": "HTML",
+   "label": "Help HTML",
+   "options": "<div class=\"well\">    Edit list of Series in the box. Rules:    <ul>       <li>           Optionally, set the number of digits in the series using dot (.)            followed by hashes (#). For example, \\\".####\\\" means that the series            will have four digits. Default is five digits.    </li>  </ul></div><br>"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-30 18:23:16.547541",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Naming series",
+ "naming_rule": "Set by user",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
