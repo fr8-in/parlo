@@ -205,4 +205,11 @@ def get_whitelisted_methods():
 #	"parlo.auth.validate"
 # ]
 
+fixtures = [
+  "parlo.config.initializers.insert_default_truck_type",
+  "parlo.config.initializers.insert_default_payment_type",
+  "parlo.config.initializers.insert_default_payment_mode",
+  "parlo.config.initializers.insert_default_indian_state"
+  ]
+
 website_route_rules = [{'from_route': '/desk/<path:app_path>', 'to_route': 'desk'},]
