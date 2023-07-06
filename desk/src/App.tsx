@@ -7,7 +7,7 @@ import theme from './layout/theme';
 const App = (props: any) => {
 
     return (
-        <FrappeProvider url='http://track.localhost:8000/'>
+        <FrappeProvider url=''>
             <ThemeProvider theme={theme}>
                 <RouterProvider router={router} />
             </ThemeProvider>
@@ -15,5 +15,5 @@ const App = (props: any) => {
     )
 }
 
-// http://track.localhost:8000/
+// http://parlo.localhost:8000/
 export default App
