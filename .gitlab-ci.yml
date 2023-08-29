@@ -1,0 +1,35 @@
+image: ubuntu:latest
+
+stages:
+  - prod
+  - dev
+
+prod:
+  stage: prod
+  tags:
+    - prod-erp-runner-1
+  only:
+    - _master
+  script:
+    - whoami
+    - cd /home/frappe/frappe-bench/apps
+    - rm -rf parlo
+    - bench get-app https://Mahaa:glpat-T7zsQMMMDY6u9NkxU5vz@gitlab.fr8.in/fr8-in/digitify/parlo.git
+    - sudo supervisorctl restart all
+    - fuser -n tcp -k 8080
+    - cd /home/frappe/frappe-bench/apps/parlo/desk/
+    - yarn prod && exit 0
+    
+dev-1:
+  stage: dev
+  tags:
+    - dev-erp-runner-1
+  only:
+    - dev  
+  script:
+    - whoami
+    - cd /home/frappe/frappe-bench/apps
+    - rm -rf parlo
+    - bench get-app https://Mahaa:glpat-T7zsQMMMDY6u9NkxU5vz@gitlab.fr8.in/fr8-in/digitify/parlo.git --branch dev
+    - cd /home/frappe/frappe-bench/apps/parlo/desk
+    - nohup yarn dev > /dev/null 2>&1 &

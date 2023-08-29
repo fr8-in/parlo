@@ -1,0 +1,10 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+parlo/docs/current
+node_modules
+parlo/public
+package-lock.json
+yarn.lock

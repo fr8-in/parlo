@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-15 16:08:33.360134",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "charge_type",
+  "trip",
+  "customer_amount",
+  "supplier_amount",
+  "driver_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "charge_type",
+   "fieldtype": "Link",
+   "label": "Charge type",
+   "options": "Charge type"
+  },
+  {
+   "fieldname": "trip",
+   "fieldtype": "Link",
+   "label": "Trip",
+   "options": "Trip"
+  },
+  {
+   "fieldname": "customer_amount",
+   "fieldtype": "Data",
+   "label": "Customer amount"
+  },
+  {
+   "fieldname": "supplier_amount",
+   "fieldtype": "Data",
+   "label": "Supplier amount"
+  },
+  {
+   "fieldname": "driver_amount",
+   "fieldtype": "Data",
+   "label": "Driver amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-16 10:37:27.534006",
+ "modified_by": "Administrator",
+ "module": "Trip",
+ "name": "Trip Charge",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
