@@ -1,0 +1,167 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-06 16:20:40.936378",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trip",
+  "trip_id",
+  "column_break_fjfs0",
+  "trip_fuel",
+  "amount",
+  "customer",
+  "supplier",
+  "column_break_d3q4n",
+  "payment_mode",
+  "payment_type",
+  "status",
+  "payment",
+  "column_break_bbmul",
+  "date",
+  "company_bank",
+  "supplier_bank",
+  "remarks",
+  "deleted_at",
+  "deleted_by",
+  "supplier_invoice"
+ ],
+ "fields": [
+  {
+   "fieldname": "trip",
+   "fieldtype": "Link",
+   "label": "Trip",
+   "options": "Trip"
+  },
+  {
+   "fieldname": "trip_id",
+   "fieldtype": "Data",
+   "label": "Trip Id"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Link",
+   "label": "Payment Mode",
+   "options": "Payment Mode"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Link",
+   "label": "Payment Type",
+   "options": "Payment Type"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Requested\nApproved\nProcessed\nCancelled"
+  },
+  {
+   "fieldname": "trip_fuel",
+   "fieldtype": "Link",
+   "label": "Trip Fuel",
+   "options": "Trip Fuel"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Datetime",
+   "label": "Date"
+  },
+  {
+   "fieldname": "company_bank",
+   "fieldtype": "Link",
+   "label": "Company Bank",
+   "options": "Company Bank"
+  },
+  {
+   "fieldname": "supplier_bank",
+   "fieldtype": "Link",
+   "label": "Supplier Bank",
+   "options": "Supplier Bank"
+  },
+  {
+   "fieldname": "column_break_fjfs0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_d3q4n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment",
+   "fieldtype": "Link",
+   "label": "Payment",
+   "options": "Payment"
+  },
+  {
+   "fieldname": "column_break_bbmul",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "deleted_at",
+   "fieldtype": "Datetime",
+   "label": "Deleted At"
+  },
+  {
+   "fieldname": "deleted_by",
+   "fieldtype": "Link",
+   "label": "Deleted By",
+   "options": "User"
+  },
+  {
+   "fieldname": "supplier_invoice",
+   "fieldtype": "Link",
+   "label": "Supplier Invoice",
+   "options": "Supplier Invoice"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-20 15:55:31.442309",
+ "modified_by": "Administrator",
+ "module": "Trip",
+ "name": "Trip Payment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

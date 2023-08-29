@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:number",
+ "creation": "2023-03-14 12:29:10.748250",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number",
+  "column_break_anfqt",
+  "l",
+  "column_break_4xhkz",
+  "b",
+  "column_break_i0thl",
+  "h",
+  "section_break_zrnyb",
+  "mfg_date",
+  "engine_no",
+  "chasis_no",
+  "axle",
+  "amended_from",
+  "truck_type",
+  "truck_model",
+  "truck_owner",
+  "category",
+  "truck_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "number",
+   "fieldtype": "Data",
+   "label": "Number",
+   "unique": 1
+  },
+  {
+   "fieldname": "l",
+   "fieldtype": "Int",
+   "label": "L"
+  },
+  {
+   "fieldname": "b",
+   "fieldtype": "Int",
+   "label": "B"
+  },
+  {
+   "fieldname": "h",
+   "fieldtype": "Int",
+   "label": "H"
+  },
+  {
+   "fieldname": "mfg_date",
+   "fieldtype": "Date",
+   "label": "Mfg Date"
+  },
+  {
+   "fieldname": "engine_no",
+   "fieldtype": "Data",
+   "label": "Engine No"
+  },
+  {
+   "fieldname": "chasis_no",
+   "fieldtype": "Data",
+   "label": "Chasis No"
+  },
+  {
+   "fieldname": "axle",
+   "fieldtype": "Int",
+   "label": "Axle"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Truck",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "truck_type",
+   "fieldtype": "Link",
+   "label": "Truck Type",
+   "options": "Truck Type"
+  },
+  {
+   "fieldname": "truck_model",
+   "fieldtype": "Link",
+   "label": "Truck Model",
+   "options": "Truck Model"
+  },
+  {
+   "fieldname": "section_break_zrnyb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_anfqt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4xhkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_i0thl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "truck_owner",
+   "fieldtype": "Link",
+   "label": "Truck Owner",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Category",
+   "options": "Own\nMarket"
+  },
+  {
+   "fieldname": "truck_status",
+   "fieldtype": "Select",
+   "label": "Truck Status",
+   "options": "Waiting for load\nConfirmed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-04 12:26:38.290964",
+ "modified_by": "Administrator",
+ "module": "Truck",
+ "name": "Truck",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
