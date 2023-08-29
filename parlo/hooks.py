@@ -205,5 +205,5 @@ def get_whitelisted_methods():
 #	"parlo.auth.validate"
 # ]
 
-after_install = "parlo.install.after_install"
+# after_install = "parlo.install.after_install"
 website_route_rules = [{'from_route': '/desk/<path:app_path>', 'to_route': 'desk'},]
