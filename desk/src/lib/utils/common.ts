@@ -3,7 +3,6 @@ import isNil from "lodash/isNil";
 
 /**
  * Common utility functions
- * Part of `@fr8/helper` shared util
  * @author Karthikeyan M
  */
 

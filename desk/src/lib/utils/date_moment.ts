@@ -6,7 +6,6 @@ const fr8Date = moment().add(1, "days")
 
 /**
  * Date and time related utility functions
- * Part of `@fr8/helper` shared util
  * @author Karthikeyan M
  */
 

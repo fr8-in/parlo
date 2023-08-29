@@ -24,7 +24,6 @@ interface Props {
 
 /**
  * Simplified and mobile frendly MUI CustomDrawer
- * Part of `@fr8/ui` shared library.
  * @returns React JSXElement -> CustomDrawer
 */
 

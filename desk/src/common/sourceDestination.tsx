@@ -14,7 +14,7 @@ interface Props extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 /**
- * SourceDestination trip source and destinamtion with badge component. It is part of `@fr8/ui` shared library.
+ * SourceDestination trip source and destinamtion with badge component.
  * @returns React Component -> SourceDestination
  * */
 

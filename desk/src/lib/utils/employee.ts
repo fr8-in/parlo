@@ -1,6 +1,5 @@
 /**
  * Employee related utility functions
- * Part of `@fr8/helper` shared util
  * @author Karthikeyan M
  */
 const employee = {

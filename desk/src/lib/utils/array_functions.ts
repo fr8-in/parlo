@@ -2,7 +2,6 @@ import isEmpty from 'lodash/isEmpty'
 
 /**
  * Array operation related utility functions
- * Part of `@fr8/helper` shared util
  */
 const array_functions = {
   /** 

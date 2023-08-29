@@ -22,7 +22,6 @@ interface Props {
 }
 
 /**
- * The React Loading spinner component. It is part of `@fr8/ui` shared library.
  * @returns React JSXElement -> Spinner | preloader | freeze loader
  * */
 
