@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.VITE_BASE_NAME ?? 'desk'}>
+    <BrowserRouter basename={import.meta.env.VITE_BASE_NAME ?? 'parlo'}>
     <App/>
     </BrowserRouter>
   </React.StrictMode>,
