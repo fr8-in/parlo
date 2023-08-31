@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2023-03-23 10:24:44.316099",
  "default_view": "List",
@@ -24,31 +25,33 @@
   "customer_price",
   "items_section",
   "items",
-  "lr_tab",
+  "charges_section",
+  "add_charge",
+  "reduce_charge",
   "section_break_d1hj6",
-  "id",
-  "source",
-  "destination",
-  "expiry_at",
-  "confirmed_at",
-  "created_at",
+  "assigned_at",
   "delivered_at",
+  "confirmed_at",
   "pod_received_at",
   "invoiced_at",
   "received_at",
-  "trip",
+  "source",
+  "destination",
+  "expiry_at",
+  "id",
   "rate_type",
-  "deleted_at",
-  "lr_no",
+  "trip",
+  "balance",
+  "write_off",
+  "billable",
   "way_bill_no",
   "advance",
   "on_delivery",
-  "billable",
-  "add_charge",
-  "reduce_charge",
   "received",
-  "balance",
-  "write_off"
+  "deleted_at",
+  "lr_no",
+  "source_branch",
+  "destination_branch"
  ],
  "fields": [
   {
@@ -134,11 +137,6 @@
    "options": "Indent item"
   },
   {
-   "fieldname": "lr_tab",
-   "fieldtype": "Tab Break",
-   "label": "LR"
-  },
-  {
    "fieldname": "section_break_d1hj6",
    "fieldtype": "Section Break"
   },
@@ -156,9 +154,7 @@
   {
    "fieldname": "id",
    "fieldtype": "Data",
-   "label": "id",
-   "read_only": 1,
-   "set_only_once": 1
+   "label": "Id"
   },
   {
    "fieldname": "source",
@@ -175,7 +171,7 @@
   {
    "fieldname": "expiry_at",
    "fieldtype": "Datetime",
-   "label": "Expiry at"
+   "label": "Expiry At"
   },
   {
    "fieldname": "deleted_at",
@@ -185,14 +181,13 @@
   {
    "fieldname": "confirmed_at",
    "fieldtype": "Datetime",
-   "label": "Confirmed at"
+   "label": "Confirmed At"
   },
   {
    "fieldname": "rate_type",
    "fieldtype": "Link",
    "label": "Rate Type",
-   "options": "Truck Type",
-   "reqd": 1
+   "options": "Truck Type"
   },
   {
    "fieldname": "source",
@@ -209,7 +204,7 @@
   {
    "fieldname": "expiry_at",
    "fieldtype": "Datetime",
-   "label": "Expiry at"
+   "label": "Expiry At"
   },
   {
    "fieldname": "trip",
@@ -225,27 +220,22 @@
   {
    "fieldname": "delivered_at",
    "fieldtype": "Datetime",
-   "label": "Delivered at"
+   "label": "Delivered At"
   },
   {
    "fieldname": "pod_received_at",
    "fieldtype": "Datetime",
-   "label": "Pod received at"
+   "label": "Pod Received At"
   },
   {
    "fieldname": "invoiced_at",
    "fieldtype": "Datetime",
-   "label": "Invoiced at"
+   "label": "Invoiced At"
   },
   {
    "fieldname": "received_at",
    "fieldtype": "Datetime",
-   "label": "Received at"
-  },
-  {
-   "fieldname": "created_at",
-   "fieldtype": "Datetime",
-   "label": "Created at"
+   "label": "Received At"
   },
   {
    "fieldname": "way_bill_no",
@@ -265,8 +255,7 @@
   {
    "fieldname": "billable",
    "fieldtype": "Float",
-   "label": "Billable",
-   "read_only": 1
+   "label": "Billable"
   },
   {
    "fieldname": "add_charge",
@@ -292,11 +281,33 @@
    "fieldname": "write_off",
    "fieldtype": "Float",
    "label": "Write Off"
+  },
+  {
+   "fieldname": "charges_section",
+   "fieldtype": "Section Break",
+   "label": "Charges"
+  },
+  {
+   "fieldname": "assigned_at",
+   "fieldtype": "Datetime",
+   "label": "Assigned At"
+  },
+  {
+   "fetch_from": "from.address_title",
+   "fieldname": "source_branch",
+   "fieldtype": "Data",
+   "label": "Source Branch"
+  },
+  {
+   "fetch_from": "to.address_title",
+   "fieldname": "destination_branch",
+   "fieldtype": "Data",
+   "label": "Destination Branch"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-06-21 16:32:40.032090",
+ "modified": "2023-08-28 19:39:31.968414",
  "modified_by": "Administrator",
  "module": "Trip",
  "name": "Indent",
@@ -317,6 +328,5 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+ "states": []
 }
