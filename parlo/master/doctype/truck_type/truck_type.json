@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "autoname": "field:code",
+ "creation": "2023-03-15 10:20:14.739958",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "common_code",
+  "name1",
+  "common_name",
+  "tonnage",
+  "is_per_case",
+  "is_per_kg"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "common_code",
+   "fieldtype": "Data",
+   "label": "Common Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "common_name",
+   "fieldtype": "Data",
+   "label": "Common Name"
+  },
+  {
+   "fieldname": "common_name",
+   "fieldtype": "Data",
+   "label": "Common Name"
+  },
+  {
+   "fieldname": "tonnage",
+   "fieldtype": "Float",
+   "label": "Tonnage"
+  },
+  {
+   "fieldname": "tonnage",
+   "fieldtype": "Float",
+   "label": "Tonnage"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_per_case",
+   "fieldtype": "Check",
+   "label": "Is Per Case"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_per_kg",
+   "fieldtype": "Check",
+   "label": "Is Per Kg"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-11 17:39:22.047077",
+ "modified_by": "Administrator",
+ "module": "Master",
+ "name": "Truck Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

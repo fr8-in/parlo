@@ -1,0 +1,15 @@
+{
+  "name": "parlo",
+  "version": "1.0.0",
+  "description": "Part Load Management integrated with ERPNext",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd parlo-app && yarn dev",
+    "build": "cd parlo-app && yarn build",
+    "postinstall": "cd parlo-app && yarn install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

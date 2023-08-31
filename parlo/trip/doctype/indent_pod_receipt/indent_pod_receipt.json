@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-16 10:17:36.085220",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "indent"
+ ],
+ "fields": [
+  {
+   "fieldname": "indent",
+   "fieldtype": "Link",
+   "label": "Indent",
+   "options": "Indent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-16 10:19:20.635648",
+ "modified_by": "Administrator",
+ "module": "Trip",
+ "name": "Indent pod receipt",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

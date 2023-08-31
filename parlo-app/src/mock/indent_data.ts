@@ -1,0 +1,41 @@
+const indent = [
+  {
+    "name": "42bf6461c2",
+    "creation": "2023-03-30 13:16:43.568183",
+    "modified": "2023-03-30 13:16:43.568183",
+    "modified_by": "Administrator",
+    "owner": "Administrator",
+    "docstatus": 0,
+    "idx": 0,
+    "series": "APL",
+    "customer": "Asian Paints ltd",
+    "consignee": "Sundry Industries",
+    "from": "Asian Paints ltd - Chennai",
+    "to": "Bangalore",
+    "rate_type": null,
+    "weight": 1000,
+    "cases": 36,
+    "customer_price": 56000,
+    "id": "APL-2200001",
+    "created_at": null,
+    "confirmed_at": null,
+    "delivered_at": null,
+    "pod_received_at": null,
+    "invoiced_at": null,
+    "received_at": null,
+    "expiry_at": null,
+    "indent_date": null,
+    "source": "Chennai",
+    "destination": "Bangalore",
+    "trip": null,
+    "delete_at": null,
+    "deleted_by": null,
+    "_user_tags": null,
+    "_comments": null,
+    "_assign": null,
+    "_liked_by": null,
+    
+  }
+]
+
+export default indent
