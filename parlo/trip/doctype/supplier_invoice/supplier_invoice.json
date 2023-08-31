@@ -1,0 +1,160 @@
+{
+ "actions": [],
+ "autoname": "format: INV-{YY}-{#####}",
+ "creation": "2023-06-12 17:46:13.344705",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "supplier",
+  "trip_count",
+  "column_break_kkb7r",
+  "cases",
+  "weight",
+  "journal_entry",
+  "column_break_sncxq",
+  "supplier_amount",
+  "add_charge",
+  "reduce_charge",
+  "column_break_s47ao",
+  "total",
+  "paid",
+  "balance",
+  "column_break_ju7tv",
+  "deleted_at",
+  "deleted_by",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "add_charge",
+   "fieldtype": "Float",
+   "label": "Add Charge",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "reduce_charge",
+   "fieldtype": "Float",
+   "label": "Reduce Charge",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Float",
+   "label": "Balance",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "trip_count",
+   "fieldtype": "Int",
+   "label": "Trip Count",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "supplier_amount",
+   "fieldtype": "Float",
+   "label": "Supplier Amount",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "paid",
+   "fieldtype": "Float",
+   "label": "Paid",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "deleted_at",
+   "fieldtype": "Datetime",
+   "label": "Deleted At",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "deleted_by",
+   "fieldtype": "Link",
+   "label": "Deleted By",
+   "options": "User",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "cases",
+   "fieldtype": "Float",
+   "label": "Cases",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "options": "Journal Entry",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_kkb7r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ju7tv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_s47ao",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sncxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed\nCancelled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-13 16:27:14.574289",
+ "modified_by": "Administrator",
+ "module": "Trip",
+ "name": "Supplier Invoice",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
