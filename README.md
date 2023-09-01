@@ -20,15 +20,6 @@ Parlo is a user-friendly solution for simplifying part load management. If you'r
 
 8. **Driver and Truck Management**: Keep track of your drivers and trucks, assigning them to specific trips and ensuring a well-coordinated logistics operation.
 
-## Sample Screenshots
-
-|           |           |
-|-----------|-----------|
-| ![Image 1](https://github.com/fr8-in/parlo/assets/96983619/2288073f-0917-40b9-8771-24d2aa1b862c) Create Indent | ![Image 2](https://github.com/fr8-in/parlo/assets/96983619/dedb68e2-4a3d-4b00-b74b-1af5dd0f2553) Create Trip |
-| ![Image 3](https://github.com/fr8-in/parlo/assets/96983619/bbc59dac-90d0-46f7-828d-95787ac2accd) Trip Detail | ![Image 4](https://github.com/fr8-in/parlo/assets/77272730/5165437f-76c6-4dc5-bc35-231bc415029d) All Trips |
-
-
-
 ## Tech Stack
 
 Parlo is built using the [Frappe Framework](https://frappeframework.com) - an open-source full stack development framework. 
@@ -69,6 +60,14 @@ yarn dev
 ```
 
 Your local dev server would be running at `http://localhost:8080`.
+
+## Sample Screenshots
+
+|           |           |
+|-----------|-----------|
+| ![Image 1](https://github.com/fr8-in/parlo/assets/96983619/2288073f-0917-40b9-8771-24d2aa1b862c) Create Indent | ![Image 2](https://github.com/fr8-in/parlo/assets/96983619/dedb68e2-4a3d-4b00-b74b-1af5dd0f2553) Create Trip |
+| ![Image 3](https://github.com/fr8-in/parlo/assets/96983619/bbc59dac-90d0-46f7-828d-95787ac2accd) Trip Detail | ![Image 4](https://github.com/fr8-in/parlo/assets/77272730/5165437f-76c6-4dc5-bc35-231bc415029d) All Trips |
+
 
 <hr>
 
