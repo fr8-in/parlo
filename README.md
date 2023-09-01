@@ -48,7 +48,7 @@ Post this, you can access Parlo on your Frappe site at the `/parlo` endpoint (e.
 
 ### Local development setup
 
-To set up your local development environment, make sure that you have enabled [developer mode](https://frappeframework.com/how-to-enable-developer-mode-in-frappe) in your Frappe site config. 
+To set up your local development environment, make sure that you have enabled [developer mode](https://frappeframework.com/docs/user/en/guides/app-development/how-enable-developer-mode-in-frappe) in your Frappe site config.
 
 You also need to disable CSRF (add `ignore_csrf: 1` in your `site_config.json`) since the React web server will not have any CSRF token in live reload mode. If you are working on the mobile app, you would also need to allow CORS (add `allow_cors: "*"` in your `site_config.json`). Please note that this is only for the local dev setup - not meant for Production. 
 
@@ -65,6 +65,10 @@ Your local dev server would be running at `http://localhost:8080`.
 1. Eway Integration
 2. Payments Integrations
 3. LR (Lorry Receipt) Generation.
+
+## Reporting Bugs
+
+If you find any bugs, feel free to report them on [Github Issues](https://github.com/fr8-in/parlo/issues). Kindly share screenshots / console logs also if possible , so that it will be usefull for the team to test and fix.
 
 ## Sample Screenshots
 
