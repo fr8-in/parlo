@@ -61,6 +61,11 @@ yarn dev
 
 Your local dev server would be running at `http://localhost:8080`.
 
+## Future Plans
+1. Eway Integration
+2. Payments Integrations
+3. LR (Lorry Receipt) Generation.
+
 ## Sample Screenshots
 
 |           |           |
