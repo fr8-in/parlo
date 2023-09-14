@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { RouteObject, createBrowserRouter } from 'react-router-dom';
 import { Store } from './context/store';
 import Layout from './layout/layout';
 import { ErrorPage } from './error-page';
@@ -18,15 +18,16 @@ import PodPendingCourier from './modules/trip/pod';
 import EditIndent from './modules/indent/edit';
 import ConfirmAssignedTrip from './modules/trip/assigned';
 
-
-export const router = createBrowserRouter([
-    {
+const routes:RouteObject[] = [
+    { 
         path: "/",
         errorElement: <ErrorPage />,
         element:
+        (
             <Store>
                 <Layout />
             </Store>
+        )
         ,
         children: [
             {
@@ -94,17 +95,15 @@ export const router = createBrowserRouter([
                 element: <EditIndent />,
 
             }
-
         ]
     },
-
     {
         path: "/login",
         element: <Login />
     },
 
-], 
-{
-    basename: "/parlo",
-});
+]
 
+export const router = createBrowserRouter(routes , {
+    basename : '/parlo'
+});

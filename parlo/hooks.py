@@ -216,4 +216,4 @@ app_license = "MIT"
 #	"parlo.auth.validate"
 # ]
 
-website_route_rules = [{'from_route': '/parlo-app/<path:app_path>', 'to_route': 'parlo'},]
+website_route_rules = [{'from_route': '/parlo/<path:app_path>', 'to_route': 'parlo'},]
