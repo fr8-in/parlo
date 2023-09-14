@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/assets/parlo/parlo-app/ && yarn copy-html-entry",
+    "build": "vite build --base=/assets/parlo/parlo/ && yarn copy-html-entry",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "copy-html-entry": "cp ../parlo/public/parlo-app/index.html ../parlo/www/parlo.html"
+    "copy-html-entry": "cp ../parlo/public/parlo/index.html ../parlo/www/parlo.html"
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
