@@ -217,3 +217,5 @@ app_license = "MIT"
 # ]
 
 website_route_rules = [{'from_route': '/parlo/<path:app_path>', 'to_route': 'parlo'},]
+
+after_install = "parlo.setup.after_install.after_install"
